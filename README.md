@@ -1,4 +1,4 @@
-# terraform Orb [![CircleCI Build Status](https://circleci.com/gh/CircleCI-Public/terraform-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/CircleCI-Public/terraform-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/circleci/terraform.svg)](https://circleci.com/orbs/registry/orb/circleci/terraform) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/CircleCI-Public/terraform-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+# terraform Orb [![CircleCI Build Status](https://circleci.com/gh/axel-springer-kugawana/terraform-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/axel-springer-kugawana/terraform-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/axel-springer-kugawana/terraform.svg)](https://circleci.com/orbs/registry/orb/axel-springer-kugawana/terraform) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/axel-springer-kugawana/terraform-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 A description of your orb. Utilize this orb to easily add X to your CI/CD pipeline.
 
@@ -13,17 +13,17 @@ What to do:
 
 ## Usage
 
-Example use-cases are provided on the orb [registry page](https://circleci.com/orbs/registry/orb/circleci/terraform#usage-examples). Source for these examples can be found within the `src/examples` directory.
+Example use-cases are provided on the orb [registry page](https://circleci.com/orbs/registry/orb/axel-springer-kugawana/terraform#usage-examples). Source for these examples can be found within the `src/examples` directory.
 
 
 ## Resources
 
-[CircleCI Orb Registry Page](https://circleci.com/orbs/registry/orb/circleci/terraform) - The official registry page of this orb for all versions, executors, commands, and jobs described.  
+[CircleCI Orb Registry Page](https://circleci.com/orbs/registry/orb/axel-springer-kugawana/terraform) - The official registry page of this orb for all versions, executors, commands, and jobs described.  
 [CircleCI Orb Docs](https://circleci.com/docs/2.0/orb-intro/#section=configuration) - Docs for using and creating CircleCI Orbs.  
 
 ### How To Contribute
 
-We welcome [issues](https://github.com/CircleCI-Public/terraform-orb/issues) to and [pull requests](https://github.com/CircleCI-Public/terraform-orb/pulls) against this repository!
+We welcome [issues](https://github.com/axel-springer-kugawana/terraform-orb/issues) to and [pull requests](https://github.com/axel-springer-kugawana/terraform-orb/pulls) against this repository!
 
 To publish a new production version:
 * Create a PR to the `Alpha` branch with your changes. This will act as a "staging" branch.

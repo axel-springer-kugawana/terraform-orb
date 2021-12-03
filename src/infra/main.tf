@@ -4,9 +4,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terracube-1"
-    key    = "terraform.tfstate"
-    region = "us-west-1"
+    bucket               = "seloger-central-auth-infra-bucket"
+    key                  = "terraform-orb/terraform.tfstate"
+    region               = "eu-west-1"
+    workspace_key_prefix = "terraform-workspaces"
   }
 }
 
@@ -34,6 +35,13 @@ resource "aws_instance" "example" {
               echo "<h1>Hello from CircleCI!</h1>" > index.html
               nohup busybox httpd -f -p 8080 &
               EOF
+
+  root_block_device {
+    delete_on_termination = true
+
+    volume_size = 100
+    volume_type = "standard"
+  }
 }
 
 output "instance_ips" {
