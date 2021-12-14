@@ -65,5 +65,9 @@ for file in $(echo "${TF_PARAM_VAR_FILE}" | tr ',' '\n'); do
 done
 fi
 export PLAN_ARGS
+# shellcheck disable=SC2157
+if [[ -n "$TF_PARAM_PLAN_FILE" ]]; then
+    export plan_file="-out=$TF_PARAM_PLAN_FILE"
+fi
 # shellcheck disable=SC2086
-terraform -chdir="$module_path" plan -input=false -no-color -out=plan.out $PLAN_ARGS
+terraform -chdir="$module_path" plan -input=false -no-color $plan_file $PLAN_ARGS

@@ -55,6 +55,10 @@ parameters:
     description: Specify the Terraform Docker image tag for the executor
     type: string
     default: "1.0.0" # update commands/install when updating this
+  plan_file:
+    type: "string"
+    description: "Path to save the plan as a file"
+    default: "plan.out"
 
 executor:
   name: default
@@ -83,6 +87,7 @@ steps:
       backend_config: << parameters.backend_config >>
       backend_config_file: << parameters.backend_config_file >>
       cli_config_file: << parameters.cli_config_file >>
+      plan_file: << parameters.plan_file >>
   - when:
       condition: << parameters.persist-workspace >>
       steps:
